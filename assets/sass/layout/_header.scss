@@ -1,0 +1,50 @@
+///
+/// Phantom by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Header */
+
+	#header {
+		@include padding(0.5em, 0, (0.5em, 0, 0, 0));
+
+		.logo {
+			display: block;
+			border-bottom: 0;
+			color: inherit;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing);
+			margin: 0 0 (_size(element-margin) * 1.25) 0;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+
+			> * {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.symbol {
+				margin-right: 0.65em;
+
+				img {
+					display: block;
+					width: 2em;
+					height: 2em;
+
+					&:hover {
+						content: url('../../images/cat_closed_eyes.png');
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=large') {
+			@include padding(1.5em, 0, (1.5em, 0, 0, 0));
+		}
+
+		@include breakpoint('<=small') {
+			@include padding(0.5em, 0, (0.5em, 0, 0, 0));
+		}
+	}
