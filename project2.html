@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CAD Expert Share</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="project-page-header">
+						<div class="inner">
+							<a href="index.html" class="back-home icon solid fa-arrow-left" aria-label="Back home"></a>
+							<h1 class="project-page-title">CAD Expert Share</h1>
+						</div>
+					</header>
+
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+							<h2>Brainstorming</h2>
+							<p>Brainstorming involved thinking of different ways in which this software will work. What hardware will one need? How will expertise be shared? And to how many?</p>
+							<p>As a proof of concept, I wanted to start with something simple. Thus, I had in mind, a simple 4x4 wall "house" model that can be manipulated. I wanted the software experience to be synchronous for the expert and novice; sharing the view and allowing dynamic interactivity.</p>
+							<p>When thinking of what to use for hand gestures. I first thought about what seemed natural to me. If it is natural to me, it would be natural for a user. This includes gestures like pointing, swiping, pinching, closed first, and open palm which are all familiar to us in this digital age.</p>
+							<p>Three.js and MediaPipe were the best candidates for libraries to use in this project as they provide the functionality needed to create the 3D model experience and hand gesture functions for the application.</p>
+							<img id="brainstorm-project1" src="images/brainstorming-project2.png" alt="" />
+							<h2 class="h2-heading">10+10 Sketches</h2>
+							<p>The following are some initial sketches of the CAD share concept.</p>
+							<section class="sketch-carousel" data-sketch-set="cadplus" aria-label="Project sketches">
+								<div class="sketch-carousel-viewport">
+									<img class="sketch-carousel-image" src="images/cad_conceptplus1.png" alt="CAD concept plus sketch 1" />
+								</div>
+								<button type="button" class="sketch-carousel-control sketch-carousel-prev" aria-label="Previous sketch">
+									<span class="icon solid fa-arrow-left" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="sketch-carousel-control sketch-carousel-next" aria-label="Next sketch">
+									<span class="icon solid fa-arrow-right" aria-hidden="true"></span>
+								</button>
+								<p class="sketch-carousel-status" aria-live="polite">1 / 4</p>
+							</section>
+							<p>What proved most promising was the idea of using your own hand to manipulate the CAD model. It is intuitive and allows a more natural feel for embodied interaction in regards to user familiarity.</p>
+							<p>With an idea in mind, I began refining with an additional 10 sketches to focus on the functionality and user experience of the software. Also, I did an initial sketch of the UI I envisioned.</p>
+							<section class="sketch-carousel" data-sketch-set="cadplus" aria-label="Project sketches">
+								<div class="sketch-carousel-viewport">
+									<img class="sketch-carousel-image" src="images/cad_conceptplus1.png" alt="CAD concept plus sketch 1" />
+								</div>
+								<button type="button" class="sketch-carousel-control sketch-carousel-prev" aria-label="Previous sketch">
+									<span class="icon solid fa-arrow-left" aria-hidden="true"></span>
+								</button>
+								<button type="button" class="sketch-carousel-control sketch-carousel-next" aria-label="Next sketch">
+									<span class="icon solid fa-arrow-right" aria-hidden="true"></span>
+								</button>
+								<p class="sketch-carousel-status" aria-live="polite">1 / 4</p>
+							</section>
+							<h2 class="h2-heading">Video Demo</h2>
+							<video class="video-demo" controls preload="metadata" aria-label="CAD Expert Share video demo">
+								<source src="./videos/cad-expert-share-demo.mp4" type="video/mp4" />
+								<p>Your browser cannot play this video. <a href="./videos/cad-expert-share-demo.mp4">Download the CAD Expert Share video demo.</a></p>
+							</video>
+							<h2 class="h2-heading">The Final Product</h2>
+							<iframe 
+								src="https://markcawili.github.io/cad-share/" 
+								title="CAD Expert Share"
+								width="100%" 
+								height="600px" 
+								style="border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+								loading="lazy"
+								class="final-product-iframe">
+							</iframe>
+							<p><i>Start the session as an expert. Then, in another browser, copy and paste the URL in the application to join as the novice. Follow the instructions on the novice side to interact with the model.</i></p>
+							<p>The final proof of concept is a fully functional web app that allows the expert to share expertise with the novice on the model and for the novice to interact with models.</p>
+							<p>In development, I noticed that the hand gestures initially chosen were not as compatible with the hand landmarking as previously anticipated. This led to a change in using the open palm to move pieces of the model and a thumbs up to confirm placement.</p>
+							<p>For the future, I envision this application to act as a plugin for CAD software. Models can be imported and even edited with the plugin, allowing novices to edit models to their choosing with the guidance of an expert.</p>
+							<p>One downfall of the type of embodied interaction we used is that hand gestures are not universal. In some cultures, pointing with a finger is rude or innapropriate and that an open palm would be more suitable. This can lead to confusion with our chosen gestures in these cultures and a misunderstanding of use.</p>
+						</div>
+					</div>
+
+					<footer class="project-footer">
+						<a href="index.html" class="project-footer-logo" aria-label="Back to portfolio home">
+							<img src="images/cat_no_tongue.png" alt="Cat logo" />
+						</a>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
